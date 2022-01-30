@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/core';
 
 function App() {
   return (
