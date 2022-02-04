@@ -26,11 +26,11 @@ const SignUpForm = () => {
           <form>
             <FormControl>
               <FormLabel>First Name</FormLabel>
-              <Input type="email" placeholder="John" />
+              <Input placeholder="John" />
             </FormControl>
 			<FormControl>
               <FormLabel>Last Name</FormLabel>
-              <Input type="email" placeholder="Smith" />
+              <Input placeholder="Smith" />
             </FormControl>
 			<FormControl>
               <FormLabel>Email</FormLabel>
