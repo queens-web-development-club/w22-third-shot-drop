@@ -1,19 +1,12 @@
+import Layout from './components/Layout';
 
-import AboutPage from './components/AboutPage';
-import Clinics from './components/Clinics';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
-
-function App() {
+function App({children}) {
   return (
     <>
-    
-    <Navbar />
-    <Clinics />
-    <Footer />
+    <Layout>
+      {children}
+    </Layout>
     </>
-    
   );
   
 }

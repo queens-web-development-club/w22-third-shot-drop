@@ -10,7 +10,6 @@ import {
     IconButton, 
     CloseButton, 
     useDisclosure, 
-    VisuallyHidden, 
     useColorModeValue, 
     Link
 } from '@chakra-ui/react'
@@ -40,13 +39,13 @@ function Navbar() {
                     </Flex>
                     <HStack display="flex" alignItems={"center"} spacing="1">
                         <HStack spacing={1} mr={1} display={{ base: 'none', md: "inline-flex"}}>
-                            <Button variant="ghost">About Us</Button>
-                            <Button variant="ghost">Clinics</Button>
-                            <Button variant="ghost">Stay & Play</Button>
-                            <Button variant="ghost">Team Building</Button>
-                            <Button variant="ghost">Schools/Community</Button>
-                            <Button variant="ghost">Court Dealers</Button>
-                            <Button variant="ghost">Clinics</Button>
+                            <Button variant="ghost" as='a' href='/about'>About Us</Button>
+                            <Button variant="ghost" as='a' href='/clinics'>Clinics</Button>
+                            <Button variant="ghost" as='a' href='/stay-and-play'>Stay & Play</Button>
+                            <Button variant="ghost" as='a' href='/team-building'>Team Building</Button>
+                            <Button variant="ghost" as='a' href='/schools-community'>Schools/Community</Button>
+                            <Button variant="ghost" as='a' href='court-dealers'>Court Dealers</Button>
+                            <Button variant="ghost">Store</Button>
                         </HStack>
                         {/* Add Cart here */}
                             <IconButton aria-label="Cart" variant="ghost" size="md" icon={<AiOutlineShoppingCart />} />

@@ -1,6 +1,5 @@
 import { Heading, Center, Box, Text, Image, HStack, Stack, Flex, useColorModeValue } from '@chakra-ui/react'
 import { useState } from 'react'
-import Navbar from './Navbar'
 
 function AboutPage() {
     const arrowStyles = {
@@ -75,7 +74,6 @@ function AboutPage() {
 
   return (
       <>
-        <Navbar />
         <Center>
             <Box >
                 <Heading py={"5"}>About Third Shot Drop</Heading>

@@ -2,7 +2,6 @@ import React from "react";
 import {
   chakra,
   Box,
-  Flex,
   useColorModeValue,
   SimpleGrid,
   GridItem,
@@ -12,20 +11,10 @@ import {
   FormControl,
   FormLabel,
   Input,
-  InputGroup,
-  InputLeftAddon,
-  FormHelperText,
-  Textarea,
-  Avatar,
-  Icon,
   Button,
-  VisuallyHidden,
-  Select,
-  Checkbox,
   RadioGroup,
   Radio,
 } from "@chakra-ui/react";
-import { FaUser } from "react-icons/fa";
 
 export default function Component() {
   return (
