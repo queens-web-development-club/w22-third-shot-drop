@@ -58,7 +58,7 @@ function Navbar() {
                                 color={useColorModeValue("gray.800", "inherit")}
                                 variant="ghost"
                                 icon={<AiOutlineMenu />}
-                                onCLick={mobileNav.onOpen}
+                                onClick={mobileNav.onOpen}
                             />
                             <VStack
                                 pos="absolute"
