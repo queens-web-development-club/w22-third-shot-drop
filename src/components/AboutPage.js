@@ -1,6 +1,6 @@
 import { Heading, Center, Box, Text,  } from '@chakra-ui/react'
 import Carousel from './Carousel'
-
+import Testimonials from './Testimonials'
 function AboutPage() {
   return (
       <>
@@ -27,6 +27,7 @@ function AboutPage() {
             </Box>
         </Center>
         <Carousel />
+        <Testimonials />
       </>
   )
 }

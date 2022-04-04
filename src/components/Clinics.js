@@ -10,8 +10,11 @@ import {
 	Stack,
 	RadioGroup,
 	Radio,
-  useToast
+  useToast,
+  Divider
 } from '@chakra-ui/react';
+
+import Testimonials from './Testimonials'
 
 const SignUpForm = () => {
   const [formValues, setformValues] = useState({});
@@ -91,9 +94,22 @@ const SignUpForm = () => {
 		</form>
 		<Flex textAlign={"left"} padding="30px 30%;" className="sign-up-warning">
 			<p>No refund if guests are cancelling less than 48 hours from the start time. Refunds issued if Third Drop Shot is concerned about weather. We offer to rebook if we can accommodate guests. $1 admin fee for Refunds</p>
+      
 		</Flex>
+    <>
+    <Testimonials/>
+    <Stack direction='row' h='50px' p={4} >
+    <Divider orientation='horizontal' />
+    </Stack>
+    </>
     </Flex>
+
+   
+  
+    
+        
   );
+  
 };
 
 export default SignUpForm;
