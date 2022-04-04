@@ -1,4 +1,5 @@
-import { Heading, Center, Box, Text,  } from '@chakra-ui/react'
+import { Heading, Center, Box, Text,Flex,HStack   } from '@chakra-ui/react'
+
 import Carousel from './Carousel'
 
 function AboutPage() {
@@ -10,6 +11,8 @@ function AboutPage() {
             </Box>
         </Center>
         <Center>
+            <Flex>
+          
             <Box py={"5"} maxW="lg">
                 <Text py={"15"}>Third Shot Drop is a labour of love.  Founded in 2016, David Bussiere, and his wife Alice have been playing since 2013 and are completely addicted. 
                 The focus of Third Shot Drop is teaching new players and helping existing players get better.<br />
@@ -25,8 +28,11 @@ function AboutPage() {
                 In 2019 he became the coach for the Kingston Special Olympics pickleball team.  
                 </Text>
             </Box>
+            </Flex>
+            
         </Center>
         <Carousel />
+        
       </>
   )
 }

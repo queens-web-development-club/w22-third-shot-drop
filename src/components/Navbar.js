@@ -11,7 +11,8 @@ import {
     CloseButton, 
     useDisclosure, 
     useColorModeValue, 
-    Link
+    Link,
+    Image
 } from '@chakra-ui/react'
 import { AiOutlineMenu, AiOutlineShoppingCart } from 'react-icons/ai'
 
@@ -30,12 +31,15 @@ function Navbar() {
                 <Flex alignItems={"center"} justifyContent="space-between" mx="auto">
                     <Flex>
                         <Link href="/" 
-                            title="Third Shot Drop"
+                            title="Third Shot Drop "
                             display={"flex"}
                             alignItems="center"
-                        >
-                            <Text fontSize={"2xl"} casing="capitalize">Third Shot Drop</Text>
+                        >   <Image src='https://github.com/queens-web-development-club/w22-third-shot-drop/blob/main/public/image.png?raw=true' width = "80px" mr = {13}></Image>
+                             <Text fontSize={"2xl"} casing="capitalize">Third Shot Drop</Text>
+                             
+                             
                         </Link>
+                        
                     </Flex>
                     <HStack display="flex" alignItems={"center"} spacing="1">
                         <HStack spacing={1} mr={1} display={{ base: 'none', md: "inline-flex"}}>

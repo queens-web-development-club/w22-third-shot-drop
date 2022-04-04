@@ -15,7 +15,7 @@ function StayPlay() {
         <Center>
             <Box maxW="xl" mb="5">
                 <Text mb="5">
-                From May to October Newboro, Ontario has some great outdoor pickleball courts.  Plan a vacation and consider staying at Dorothy's Lodge in beautiful Chaffey's Lock.<br />The owner is a pickleball player too!  This is a great place for a family reunion or any gathering with a bunch of friends or business associates. Check it out <span><Link href="www.rideaulakescottages.com" color="teal.500" isExternal>here</Link></span>:
+                From May to October Newboro, Ontario has some great outdoor pickleball courts.  Plan a vacation and consider staying at Dorothy's Lodge in beautiful Chaffey's Lock.<br />The owner is a pickleball player too!  This is a great place for a family reunion or any gathering with a bunch of friends or business associates. Check it out <span><Link href="https://rideaulakescottages.com" color="teal.500" isExternal>here</Link></span>:
                 </Text>
                 <Image src="https://i.imgur.com/o3be1Z1.jpeg" />
             </Box>
