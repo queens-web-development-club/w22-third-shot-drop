@@ -20,6 +20,11 @@ const contactUs = async (req, res) => {
 
 		sendEmail(process.env.MAIL_TO, 'Contact Form', message)
 		res.status(200).json({ 'status': 'success' })
+		
+		if (!process.env.MAIL_TO){
+			console.log("Unable to get administrator's email")
+			res.status(500).json({'status' : 'error'})
+		}
 	}
 	catch(error) {
 		console.log(error)
