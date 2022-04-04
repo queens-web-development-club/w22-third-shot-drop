@@ -39,6 +39,7 @@ function Navbar() {
                     </Flex>
                     <HStack display="flex" alignItems={"center"} spacing="1">
                         <HStack spacing={1} mr={1} display={{ base: 'none', md: "inline-flex"}}>
+                            <Button variant="ghost" as='a' href='/contact-us'>Contact Us</Button>
                             <Button variant="ghost" as='a' href='/about'>About Us</Button>
                             <Button variant="ghost" as='a' href='/clinics'>Clinics</Button>
                             <Button variant="ghost" as='a' href='/stay-and-play'>Stay & Play</Button>
@@ -80,6 +81,7 @@ function Navbar() {
                                     onClick={mobileNav.onClose}
                                 />
 
+                                <Button w="full" variant="ghost">Contact Us</Button>
                                 <Button w="full" variant="ghost">About Us</Button>
                                 <Button w="full" variant="ghost">Clinics</Button>
                                 <Button w="full" variant="ghost">Stay & Play</Button>

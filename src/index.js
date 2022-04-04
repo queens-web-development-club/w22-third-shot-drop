@@ -9,6 +9,7 @@ import StayPlay from './components/StayPlay'
 import TeamBuilding from './components/TeamBuilding'
 import SchoolsCommunity from './components/SchoolsCommunity'
 import CourtDealers from './components/CourtDealers'
+import ContactUs from './components/ContactUs'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,11 @@ ReactDOM.render(
         <Route path='/' element={
           <App>
             <AboutPage />
+          </App>
+        } />
+        <Route path='/contact-us' element={
+          <App>
+            <ContactUs />
           </App>
         } />
         <Route path='about' element={

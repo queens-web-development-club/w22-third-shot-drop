@@ -19,7 +19,7 @@ const SignUpForm = () => {
 
   function onInputChange(e) {
     const { name, value } = e.target
-
+    console.log(name, value)
     setformValues({
       ...formValues,
       [name]: value,
@@ -65,24 +65,25 @@ const SignUpForm = () => {
 		<form action="submit" onSubmit={handleSubmit} autoComplete="off">
       <FormControl>
         <Stack alignItems="left">
-          <RadioGroup my={6} name="level">
+          <RadioGroup required={true} my={6} name="level">
             <Stack>
               <Radio value='1' onChange={onInputChange}>Brockville Ontario - New Player Intro - 125 Stewart St - 9am</Radio>
               <Radio value='2' onChange={onInputChange}>Brockville Ontario - Up Your Game - 125 Stewart St - 11:30am</Radio>
             </Stack>
           </RadioGroup>
           <Stack spacing={5} my={6} textAlign="left">
+
             <FormLabel>First Name</FormLabel>
-            <Input name="firstName" type='text' placeholder="John" defaultValue={formValues.firstName} onChange={onInputChange} />
+            <Input required={true} name="firstName" type='text' placeholder="John" defaultValue={formValues.firstName} onChange={onInputChange} />
 
             <FormLabel>Last Name</FormLabel>
-            <Input name="lastName" type='text' placeholder="Doe" defaultValue={formValues.lastName} onChange={onInputChange} />
+            <Input required={true} name="lastName" type='text' placeholder="Doe" defaultValue={formValues.lastName} onChange={onInputChange} />
 
             <FormLabel>Email Address</FormLabel>
-            <Input name="email" type='email' placeholder="john@aol.com" defaultValue={formValues.email} onChange={onInputChange} />
+            <Input required={true} name="email" type='email' placeholder="john@aol.com" defaultValue={formValues.email} onChange={onInputChange} />
 
             <FormLabel># of additional guests</FormLabel>
-            <Input name="guestCount" type='number' placeholder="1" defaultValue={formValues.guestCount} onChange={onInputChange} />
+            <Input required={true} name="guestCount" type='number' placeholder="1" defaultValue={formValues.guestCount} onChange={onInputChange} />
 
             <Button width="full" mt={4} type="submit">Book Now</Button>
           </Stack>
