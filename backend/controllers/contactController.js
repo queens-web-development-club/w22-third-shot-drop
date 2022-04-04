@@ -4,7 +4,7 @@ const contactUs = async (req, res) => {
 	if (!req.body.name || !req.body.phoneNum || !req.body.email ||
 		!req.body.message) {
 
-		res.status(400).json({ 'status': 'error' })
+		res.status(400).json({ 'status': 'invalid form data' })
 		return;
 	}
 
@@ -23,7 +23,7 @@ const contactUs = async (req, res) => {
 	}
 	catch(error) {
 		console.log(error)
-		res.status(500).json({ 'status': 'error' })
+		res.status(500).json({ 'status': 'server error' })
 	}
 
 }
