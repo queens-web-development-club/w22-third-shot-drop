@@ -36,6 +36,12 @@ const createReservation = async (req, res) => {
 		`
 
 		sendEmail(process.env.MAIL_TO, 'New Reservation Created', message)
+		
+		if (!process.env.MAIL_TO) {
+			console.log("Unable to get administrator's email")
+			res.status(500).json({'status': 'error'})
+		}
+		
 	}
 	catch (error) {
 		res.status(500).json({ 'status': 'error' })
