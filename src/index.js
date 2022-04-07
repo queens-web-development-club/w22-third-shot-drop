@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react' 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './components/Landing'
 import AboutPage from './components/AboutPage'
 import Clinics from './components/Clinics'
 import StayPlay from './components/StayPlay'
@@ -17,7 +18,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={
           <App>
-            <AboutPage />
+            <Landing />
           </App>
         } />
         <Route path='about' element={
