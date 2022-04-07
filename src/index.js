@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react' 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './components/Landing'
 import AboutPage from './components/AboutPage'
 import Clinics from './components/Clinics'
 import StayPlay from './components/StayPlay'
 import TeamBuilding from './components/TeamBuilding'
 import SchoolsCommunity from './components/SchoolsCommunity'
 import CourtDealers from './components/CourtDealers'
-import Landing from './components/Landing'
 
 ReactDOM.render(
   <React.StrictMode>
