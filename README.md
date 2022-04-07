@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Running the code
+## Locally
+To run the website locally, follow the following steps:
+- `npm install` to install site dependencies
+- Configure the .env file (see below)
+- `npm start` to start the website in local mode.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## For hosting 
+To host your website, do the following:
+- `npm run build` to get the production files for your website
+- Reference the [documentation](https://create-react-app.dev/docs/deployment/#static-server) on how to serve the website on your server.
 
-## Available Scripts
+# Configuration
+## Adding images to the carousel on the About Page
+- Open the `src/Carousel.js` file
+- Look for the `slides` JSON object
+- Add data to the object in the same format
 
-In the project directory, you can run:
+## .env configuration
+- Make a copy of the `.env.example` and call it `.env`
+- Fill in the details, as required
+Keys | Values | Description
+--- | --- | ---
+REACT_APP_GMAIL_USER | eg. john.doe@gmail.com | Your gmail email address
+REACT_APP_GMAIL_PASS | password | Your gmail password
+REACT_APP_CLIENT_EMAIL | eg. john.doe2@gmail.com | The email where you want to be notified about new bookings
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*NOTE:* You need to configure your `.env` file, or else the lesson sign up page on the website will not work.
